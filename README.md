@@ -9,7 +9,7 @@
 -> Instalação do Node, documentação disponível em: <https://github.com/coreybutler/nvm-windows/releases> 
 <br/>
 
--> Versão Node utilizada nesse projeto: 16.13.1
+-> Versão Node utilizada nesse projeto: `16.13.1`
 <br/>
 
 -> Comando utilizado: `nvm install 16.13.1`
@@ -20,6 +20,9 @@
 <br/>
 
 -> Comando utilizado: `npm install cypress --save-dev`
+<br/>
+
+-> Versão do Cypress Utilizado `13.5.0`
 
 #### Site Utilizado "AluraPic"
 
