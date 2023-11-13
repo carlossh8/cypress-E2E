@@ -1,3 +1,5 @@
+/// <reference types="Cypress" />
+
 describe('Página de cadastro', () => {
   it('Preencher os campos de registrar agora', () => {
     cy.visit('http://localhost:4200/#/home')
