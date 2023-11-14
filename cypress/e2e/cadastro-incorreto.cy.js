@@ -1,14 +1,16 @@
-/// <reference types="Cypress" />
-
 describe('Página de cadastro', () => {
-    it('Preencher os campos de "registrar agora" de forma incorreta', () => {
-      cy.visit('http://localhost:4200/#/home')
-      cy.contains('a','Register now').click();
-      cy.contains('button','Register').click();
-      cy.contains('button','Register').click();
-      cy.contains('Email is required!').should('be.visible');
-      cy.contains('Full name is required!').should('be.visible');
-      cy.contains('User name is required!').should('be.visible');
-      cy.contains('Password is required!').should('be.visible');
+
+    beforeEach(() => {
+        cy.visit('http://localhost:4200')
     })
-  })
+
+    it('Verifica mensagens de campos obrigatórios na página de cadastro', () => {
+        cy.get('[data-test="register"]').click();
+        cy.get('[data-test="btnRegister"]').click();
+        cy.get('[data-test="btnRegister"]').click();
+        cy.contains('Email is required!').should('be.visible');
+        cy.contains('Full name is required!').should('be.visible');
+        cy.contains('User name is required!').should('be.visible');
+        cy.contains('Password is required!').should('be.visible');
+    })
+})

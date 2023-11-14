@@ -1,9 +1,12 @@
-/// <reference types="Cypress" />
-
 describe('Página de login', () => {
-    it('Verificar mensagem de campos obrigatórios', () => {
-      cy.visit('http://localhost:4200/#/home')
-      cy.contains('User name is required!').should('be.visible');
-      cy.contains('Password is required!').should('be.visible');
+
+    beforeEach(() => {
+        cy.visit('http://localhost:4200')
     })
-  })
+
+        it('Verifica mensagens de campos obrigatórios na página de login', () => {
+            cy.contains('User name is required!').should('be.visible');
+            cy.contains('Password is required!').should('be.visible');
+        
+        })
+})
