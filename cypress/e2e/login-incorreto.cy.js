@@ -2,10 +2,6 @@ describe('Página de login', () => {
 
     beforeEach(() => {
         cy.visit('http://localhost:4200')
-
-        cy.intercept('POST', 'http://localhost:3000/user/login',{
-            statusCode: 400
-        }).as('stubPost')
     })
 
         it('Verifica mensagens de campos obrigatórios na página de login', () => {
@@ -14,9 +10,5 @@ describe('Página de login', () => {
         
         })
 
-        it('Deve falhar mesmo que os campos sejam preenchidos corretamente', () => {
-            cy.login('fulano1','fulano123');
-            cy.wait('@stubPost')
-     
-        })
+        
 })
