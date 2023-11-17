@@ -5,7 +5,7 @@ describe('Página de login', () => {
     })
 
         it('Deve preencher os campos do formulário corretamente e realizar login', () => {
-            cy.login('carowl', '12345678')
+            cy.login('fulano1', 'fulano123')
             })
 
 })
