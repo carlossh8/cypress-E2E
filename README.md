@@ -24,6 +24,12 @@
 
 -> Versão do Cypress Utilizado `13.5.0`
 
+#### Mochawesome
+
+-> Esse projeto utiliza o mochawesome, documentação disponível em: <https://docs.cypress.io/guides/tooling/reporters>
+
+-> Comando utilizado: `npm install cypress --save-dev mochawesome`
+
 #### Site Utilizado "AluraPic"
 
 -> Disponível em: <https://github.com/alura-cursos/alurapic>
